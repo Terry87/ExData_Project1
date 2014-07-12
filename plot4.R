@@ -22,7 +22,7 @@ times <- strptime(paste(df1$Date, df1$Time), format="%d/%m/%Y %H:%M:%S")
 png(filename="plot4.png", width=480, height=480)
 
 ## Produce the four graphs in a 2x2 grid
-par(mfrow=c(2,2), mfcol=c(2,2))
+par(mfcol=c(2,2))
 with(df1, {
     plot(times, Global_active_power, type="l", xlab="", ylab="Global Active Power")
     plot(times, df1$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
