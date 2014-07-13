@@ -9,7 +9,7 @@
 ##   4. Global reactive power
 ##
 ## Author: Terry87
-## Date:   10/07/2014
+## Date:   12/07/2014
 
 ## Read data from disk file into a data frame 
 df <- read.table("household_power_consumption.txt", header=TRUE, sep=";", as.is=TRUE, na.strings="?")
